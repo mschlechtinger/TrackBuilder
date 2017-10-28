@@ -8,7 +8,11 @@
 		<script src="lib/js/jquery.js"></script>
 		<script src="lib/js/what-input.js"></script>
 		<script src="lib/js/foundation.js"></script>
+		<script src="lib/js/konva.min.js"></script>
+
 		<script src="resources/js/app.js"></script>
+
+		<title>ADAC Trackbuilder</title>
 	</head>
 
 
@@ -27,10 +31,8 @@
 			<div class="grid-x grid-padding-x">
 				<!-- Canvas -->
 				<div class="large-8 medium-8 cell">
-					<div class="primary callout">
-
-						<h5>Canvas</h5>
-					</div>
+					<h5>Canvas</h5>
+					<div id="canvas" style="background: black"></div>
 				</div>
 
 				<!-- Track Pieces Box -->
@@ -39,34 +41,7 @@
 						<h5>track pieces</h5>
 
 						<div class="grid-x grid-padding-x">
-							<div class="large-6 medium-6 cell">
-								<div class="primary callout">
-									<p>P1</p>
-								</div>
-								<div class="primary callout">
-									<p>P3</p>
-								</div>
-								<div class="primary callout">
-									<p>P5</p>
-								</div>
-								<div class="primary callout">
-									<p>P7</p>
-								</div>
-							</div>
-							<div class="large-6 medium-6 cell">
-								<div class="primary callout">
-									<p>P2</p>
-								</div>
-								<div class="primary callout">
-									<p>P4</p>
-								</div>
-								<div class="primary callout">
-									<p>P6</p>
-								</div>
-								<div class="primary callout">
-									<p>P8</p>
-								</div>
-							</div>
+							<div id="trackPiecesContainer" class="large-12 cell"></div>
 						</div>
 
 					</div>
